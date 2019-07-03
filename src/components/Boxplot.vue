@@ -12,7 +12,6 @@ export default {
     },
     data: () => {
         return {
-            data,
         };
     },
     created(){
@@ -28,7 +27,6 @@ export default {
                 dbname:table name,
                 columns: table dimensions name
             */
-            console.log(vm.$props.data)
             vm.columns = ['test1','test2']
             vm.pixiInit()
             vm.d3Init(vm.$props.data)
