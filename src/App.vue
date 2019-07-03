@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Boxplot :data='data' />
+    <Boxplot/>
   </div>
 </template>
 
@@ -12,14 +12,6 @@ export default {
   components: {
     Boxplot
   },
-  data:()=>{
-    return {
-      data:{
-        'test1':[1,3,5,7,9],
-        'test2':[10,20,55,80,100]
-      },
-    }
-  }
 }
 </script>
 

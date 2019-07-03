@@ -7,7 +7,6 @@ let PIXI = undefined
 let d3 = undefined
 
 export default {
-    props:['data'],
     components: {
     },
     data: () => {
@@ -29,7 +28,10 @@ export default {
             */
             vm.columns = ['test1','test2']
             vm.pixiInit()
-            vm.d3Init(vm.$props.data)
+            vm.d3Init({
+                'test1':[1,3,5,7,9],
+                'test2':[10,20,55,80,100]
+            })
             vm.drawGraph()
             vm.load = false
         },
