@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "d3": "^5.9.7",
+    "pixi": "^0.3.1",
+    "pixi.js": "^5.0.4",
     "vue": "^2.6.10"
   },
   "devDependencies": {

@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Boxplot :data='data' />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Boxplot from './components/Boxplot.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Boxplot
+  },
+  data:()=>{
+    return {
+      data:{
+        'test1':[1,3,5,7,9],
+        'test2':[10,20,55,80,100]
+      },
+    }
   }
 }
 </script>
@@ -24,5 +31,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
 }
 </style>
